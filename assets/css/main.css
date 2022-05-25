@@ -2192,20 +2192,23 @@ input, select, textarea {
 	ul.icons {
 		cursor: default;
 		list-style: none;
-		padding-left: 0;
+		padding-left: 1;
 	}
 
 		ul.icons li {
 			display: inline-block;
 			padding: 0 1em 0 0;
+			color: #1cb88c;
 		}
 
 			ul.icons li:last-child {
-				padding-right: 0;
+				padding-right: 2em;
+				color: #3eb08f;
 			}
 
 			ul.icons li .icon:before {
-				font-size: 1.5em;
+				font-size: 1.75em;
+				
 			}
 
 /* Labeled Icons */
@@ -2231,7 +2234,7 @@ input, select, textarea {
 			}
 
 			ul.labeled-icons li h3 {
-				color: #b2b2b2;
+				color: #f50404;
 				left: 0;
 				position: absolute;
 				text-align: center;
