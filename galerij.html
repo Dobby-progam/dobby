@@ -99,12 +99,12 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
           <div class="card shadow-sm">
-            <img src="assets/img_6927.jpg"class="bd-placeholder-img card-img-top" >
+            <img src="https://cdn.discordapp.com/attachments/1012019202779005050/1013712957206691922/IMG_6731.JPG"class="bd-placeholder-img card-img-top" >
             <div class="card-body">
-              <p class="card-text">mijn kat </p>
+              <p class="card-text">my kat </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div >
-                  <a href="assets/img_6927.jpg" class="btn btn-primary" role="button">view</a>
+                  <a href="https://cdn.discordapp.com/attachments/1012019202779005050/1013712957206691922/IMG_6731.JPG" class="btn btn-primary" role="button">view</a>
                   
                 </div>
                 <small class="text-muted"></small>
@@ -114,12 +114,61 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <iframe class="bd-placeholder-img card-img-top" src="https://youtube.com/shorts/FgufaWDeDrY"></iframe> 
-            <div class="card-body">
-              <p class="card-text">it shuld be a vido generated whit AI (see the link below ) </p>
+            <div id="player">
+            </div>
+
+          <script>
+            // 2. This code loads the IFrame Player API code asynchronously.
+            var tag = document.createElement('script');
+      
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      
+            // 3. This function creates an <iframe> (and YouTube player)
+            //    after the API code downloads.
+            var player;
+            function onYouTubeIframeAPIReady() {
+              player = new YT.Player('player', {
+                height: '500',
+                width: '500',
+                videoId: 'WjQhgaaJ8c4',
+                playerVars: {
+                  'playsinline': 1
+                },
+                events: {
+                  'onReady': onPlayerReady,
+                  'onStateChange': onPlayerStateChange
+                }
+              });
+            }
+      
+            // 4. The API will call this function when the video player is ready.
+            function onPlayerReady(event) {
+              event.target.playVideo();
+            }
+      
+            // 5. The API calls this function when the player's state changes.
+            //    The function indicates that when playing a video (state=1),
+            //    the player should play for six seconds and then stop.
+            var done = false;
+            function onPlayerStateChange(event) {
+              if (event.data == YT.PlayerState.PLAYING && !done) {
+                setTimeout(stopVideo, 6000);
+                done = true;
+              }
+            }
+            function stopVideo() {
+              player.stopVideo();
+            }
+          </script>
+            
+           
+            
+              <p class="card-text">video generated whit AI (see the link below ) </p>
               <div class="d-flex justify-content-between align-items-center">
-                <div >
-                  <a href="https://youtube.com/shorts/FgufaWDeDrY?feature=share" class="btn btn-primary" role="button">view the video</a>
+                <div>
+                  <a href="https://youtube.com/shorts/FgufaWDeDrY?feature=share" class="btn btn-primary" role="button">see the video</a>
                   
                 </div>
                 <small class="text-muted"></small>
