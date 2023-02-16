@@ -1,62 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <head>
-            <!--Page Info-->
-            <title>Dobbie's</title>
-            <meta name="description" content="The website of Dobbie ">
-            <meta name="author" content="Thijmen">
-           <!--<link rel="icon" href="/assets/images/p/logo.png">--> 
-          
-    
-          
-            <!--Bootstrap imports-->
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-            
-            
-            <script src="https://kit.fontawesome.com/4f827820f8.js" crossorigin="anonymous"></script>
-            
-            
-            <!--Boxicons-->
-            <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    
-          
-            <!--Personal (s)css imports-->
-            <link rel="stylesheet" href="assets/main.css">
-           
-            
-            <!--Viewport-->
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        </head>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="src/main.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/4f827820f8.js" crossorigin="anonymous"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
 
-<body>
-    <body>
-        <main>
-          <h1 class="visually-hidden">Headers examples</h1>
-        
-          <div class="container">
-            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-                <span class="fs-4">Dobbie's website</span>
-              </a>
-        
-              <ul class="nav nav-pills">
-                <li class="nav-item"><a href="index.html"  class="nav-link">Home <i class="fa-solid fa-house-user"></i></a></li>
-                <li class="nav-item"><a href="projecten.html" class="nav-link">project's</a></li>
-                <li class="nav-item"><a href="galerij.html" class="nav-link">galerij</a></li>
-                 <li class="nav-item"><a href="contact.html" class="nav-link">contact</a></li>
-              </ul>
-            </header>
-          </div>     
-<h1 id=title> My name is Dobbie </h1>
-<p id="main">and I work on some projects see <a href="projecten.html">the projects page</a> </p>
-<p id=main> and I am a devolper at <br>
-<a id="main" href="https://psychops.eu" ><img src="https://spyro.tk/images/psychops.png" alt="psychops" height="25%" width="12.5%"></a></p>
+</head>
+<body class="bg-zinc-900">
+  <up id="up"></up>
+  <div class="center" >
+    <div>
+      <p class="lg:text-8xl md:text-5xl text-4xl text-center">Dobbie</p>
+    </div>
+    <div class="space">
+      <img src="src/pfp.png" alt="pfp" class="pfp inline-block h-24 w-24 rounded-full ring-2 ring-[#fffdafdfa] lg:h-60 lg:w-60">
+    </div>
+  </div>
+<div class="bottum">
+  <div class="grid grid-cols-2 gap-10">
+    <div>
+      <button id="about" class="px-4 py-2 bg-sky-500 hover:bg-sky-700 rounded-full text-[#fffdfdfa] md:text-xl">about me </button>
+    </div>
+    <div>
+      <button id="contact" class="px-4 py-2 bg-sky-500 hover:bg-sky-700 rounded-full text-[#fffdfdfa] md:text-xl">contact me  </button>
+    </div>
+  </div>
+</div>
+<!--one of the 2 side bar wil be showen on a button press-->
+<!--about me -->
+<div id="left" class="hadden text-center about">
+    <div class=" w-auto h-auto">
+      <p class="text-3xl">I am Dobbie</p>
+      <p class="lg:text-xl text-sm">I work on some projects like Dobbie bot and my own my website templates. I like cats  </p>
 
+      <button id="butabout" >
+        <span class="upar">
+          <i class="fa-solid fa-chevron-up"></i>
+        </span>
+      </button>
+    </div>
+</div>
+<!--contact info-->
+<div id="contact1" class="hadden text-center contact">
+  <div class=" w-auto h-auto">
+    <p class="text-3xl">I am Dobbie</p>
+    <p class="lg:text-xl text-sm">you can find me on 
+      <li>
+        <a href="https://discord.gg/KVSsXdRmFw">discord</a>
+      </li>
+    </p>
+    <div>
+      <button id="butcont" >
+        <span class="upar">
+          <i class="fa-solid fa-chevron-up"></i>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
 
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4034162310444060a29e893e4999b19b"}'></script><!-- End Cloudflare Web Analytics -->
+<!--footer + copyright information-->
+<footer class="down">
+  <p class="text-center text-xs font-mono md:text-ms  ">This website is made my Dobbie on <a href="https://github.com/Dobby-progam/my-website-templates" class="text-sky-800">github</a> and is Licensed under the MIT License </p>
+</footer>
+<script src="src/main.js"></script>
+
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4034162310444060a29e893e4999b19b"}'></script>
+<!-- End Cloudflare Web Analytics -->
 </body>
 </html>

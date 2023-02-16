@@ -1,0 +1,54 @@
+p , h1 , h2 ,h3 ,h4, h5 ,h6 ,a,li {
+    color:whitesmoke
+    
+}
+.center{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
+}
+.space{
+margin-top: 100px;
+transform: translate(25%, 0);
+}
+
+.bottum{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hadden {
+    display: none;
+}
+.about{
+    position: absolute;
+    top: 300%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.about-t{
+    position: relative;
+    top:250%;
+}
+.contact{
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.down{
+    position: absolute;
+    top: 96%;
+
+}
+.upar{
+    color: whitesmoke;
+    font-size: 3em;
+
+}
