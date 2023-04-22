@@ -37,7 +37,7 @@ transform: translate(25%, 0);
 }
 .contact{
     position: absolute;
-    top: 200%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

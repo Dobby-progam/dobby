@@ -11,7 +11,9 @@ left.scrollIntoView();
 //display the contact page and scroll to it
 const buttonR= document.getElementById("contact");
 const contact = document.getElementById("contact1");
+
 buttonR.addEventListener('click', function (){
+hide.classList.toggle('hadden')
 contact.classList.toggle('hadden')
 contact.scrollIntoView("");
 });
@@ -29,7 +31,7 @@ left.classList.toggle("hadden");
 //scroll up and hide the contact page
 const butcont=document.getElementById("butcont")
 butcont.addEventListener('click', function(){
-    up.scrollIntoView
-    contact.classList.toggle('hadden')
-
+up.scrollIntoView
+contact.classList.toggle('hadden')
+onhide.classList.toggle('hadden')
 });
